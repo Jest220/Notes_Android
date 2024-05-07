@@ -1,3 +1,3 @@
 # Notes_Android
 
-Готовые apk файлы находятся по путям Android\Release\Notes\bin и Android64\Release\Notes\bin
+Готовые apk файлы Notes.apk для 32-разрядных систем, Notes64.apk для 64-разрядных систем.
