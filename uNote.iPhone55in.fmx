@@ -1,0 +1,59 @@
+inherited note_iPhone55in: Tnote_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 3
+  inherited Memo1: TMemo
+    Size.Width = 414.000000000000000000
+    Size.Height = 595.000000000000000000
+    Viewport.Width = 414.000000000000000000
+    Viewport.Height = 595.000000000000000000
+  end
+  inherited Memo2: TMemo
+    Position.Y = 44.000000000000000000
+    Size.Width = 414.000000000000000000
+    Viewport.Width = 414.000000000000000000
+    Viewport.Height = 40.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 414.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited Edit: TButton
+      Position.X = 370.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+    inherited GoBack: TButton
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+    inherited Delete: TButton
+      Position.X = 321.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+  end
+  inherited Line1: TLine
+    Position.Y = 44.000000000000000000
+    Size.Width = 414.000000000000000000
+  end
+  inherited ToolBar2: TToolBar
+    Position.Y = 672.000000000000000000
+    Size.Width = 414.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited Label2: TLabel
+      Size.Width = 414.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+  end
+  inherited Rectangle1: TRectangle
+    Corners = [TopLeft, TopRight, BottomRight]
+    Position.Y = 45.000000000000000000
+    Size.Width = 414.000000000000000000
+    inherited Edit1: TEdit
+      Enabled = False
+      Size.Width = 414.000000000000000000
+      Size.Height = 30.000000000000000000
+      StyledSettings = [Size, Style, FontColor]
+    end
+  end
+end

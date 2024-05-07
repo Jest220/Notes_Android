@@ -1,0 +1,167 @@
+object main: Tmain
+  Left = 0
+  Top = 0
+  Caption = #1050#1091#1088#1089#1086#1074#1072#1103' '#1041#1077#1083#1103#1077#1074' 428'
+  ClientHeight = 613
+  ClientWidth = 349
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 349.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'toolbarstyle'
+    TabOrder = 0
+    TintColor = claBlanchedalmond
+    object ButtonAdd: TButton
+      Align = Right
+      Position.X = 301.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'addtoolbutton'
+      TabOrder = 0
+      Text = 'ButtonAdd'
+      OnClick = ButtonAddClick
+    end
+    object Label1: TLabel
+      Align = Client
+      Size.Width = 301.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = #1047#1072#1084#1077#1090#1082#1080
+      TabOrder = 1
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 349.000000000000000000
+    Size.Height = 565.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    DisableFocusEffect = True
+    ItemHeight = 40.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitembottomdetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = ListBox1ItemClick
+    Viewport.Width = 345.000000000000000000
+    Viewport.Height = 513.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      ItemData.Detail = 'dfdfdfdsfsdafdsfdsafsdfsdfadsfasdfasdfasdfdsfdsf'
+      Size.Width = 345.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'ListBoxItem1'
+    end
+    object ListBoxItem2: TListBoxItem
+      ItemData.Accessory = aMore
+      Position.Y = 40.000000000000000000
+      Size.Width = 345.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'ListBoxItem2'
+    end
+    object SearchBox1: TSearchBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      Size.Width = 345.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\Comp\'#1056#1072#1073#1086#1090#1072'\'#1050#1091#1088#1089#1086#1074#1072#1103'\lastchance\database\Notes' +
+        'DB.db3'
+      'DriverID=SQLite')
+    LoginPrompt = False
+    AfterConnect = FDConnection1AfterConnect
+    BeforeConnect = FDConnection1BeforeConnect
+    Left = 256
+    Top = 121
+  end
+  object FDQueryDelete: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'DELETE FROM Notes'
+      'WHERE date LIKE :date')
+    Left = 256
+    Top = 193
+    ParamData = <
+      item
+        Name = 'DATE'
+        DataType = ftString
+        ParamType = ptInput
+      end>
+  end
+  object FDQueryLoad: TFDQuery
+    Connection = FDConnection1
+    Left = 256
+    Top = 257
+  end
+  object FDQueryAdd: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'INSERT INTO Notes(Title, Content) VAlUES(:title, :content)')
+    Left = 256
+    Top = 313
+    ParamData = <
+      item
+        Name = 'TITLE'
+        ParamType = ptInput
+      end
+      item
+        Name = 'CONTENT'
+        ParamType = ptInput
+      end>
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 48
+    Top = 345
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 144
+    Top = 385
+  end
+  object FDQueryUpdate: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'UPDATE Notes'
+      'SET Title = :title,'
+      '    Content = :content,'
+      '    date = CURRENT_TIMESTAMP'
+      'WHERE '
+      '    date LIKE :date;')
+    Left = 256
+    Top = 368
+    ParamData = <
+      item
+        Name = 'TITLE'
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'CONTENT'
+        ParamType = ptInput
+      end
+      item
+        Name = 'DATE'
+        ParamType = ptInput
+      end>
+  end
+  object FDCommandAdd: TFDCommand
+    Connection = FDConnection1
+    Left = 264
+    Top = 440
+  end
+end

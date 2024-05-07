@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.490,=C:\Users\Comp\Desktop\lastchance\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.676,=C:\Users\Comp\Работа\Курсовая\lastchance\database\NotesDB.db3</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.976,C:\Users\Comp\Работа\Курсовая\lastchance\database\NotesDB.db3=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.398,C:\Users\Comp\Desktop\lastchance\Unit1.pas=C:\Users\Comp\Desktop\lastchance\uNote.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.398,C:\Users\Comp\Desktop\lastchance\Unit1.fmx=C:\Users\Comp\Desktop\lastchance\uNote.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.264,C:\Users\Comp\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\Comp\Desktop\lastchance\Notes.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.842,=C:\Users\Comp\Desktop\lastchance\database\NotesDB.db</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.544,=C:\Users\Comp\Работа\Курсовая\lastchance\database\NotesDB.db3</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.592,=C:\Users\Comp\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.596,=C:\Users\Comp\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.083,=C:\Users\Comp\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.977,C:\Users\Comp\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\Comp\Desktop\lastchance\uMain.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.539,C:\Users\Comp\Работа\Курсовая\lastchance\database\NotesDB.db3=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.801,=C:\Users\Comp\Работа\Курсовая\lastchance\database\NotesDB.db3</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.977,C:\Users\Comp\Documents\Embarcadero\Studio\Projects\Unit2.fmx=C:\Users\Comp\Desktop\lastchance\uMain.fmx</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<Phui iOSSimulator="iPhone5"/>
+		<NoProfile Android="" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

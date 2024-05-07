@@ -1,0 +1,34 @@
+inherited main_iPhone55in: Tmain_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 414.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited ButtonAdd: TButton
+      Position.X = 370.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+    inherited Label1: TLabel
+      Size.Width = 370.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 414.000000000000000000
+    Size.Height = 672.000000000000000000
+    Viewport.Width = 414.000000000000000000
+    Viewport.Height = 628.000000000000000000
+    inherited ListBoxItem1: TListBoxItem
+      Size.Width = 414.000000000000000000
+    end
+    inherited ListBoxItem2: TListBoxItem
+      Size.Width = 414.000000000000000000
+    end
+    inherited SearchBox1: TSearchBox
+      Size.Width = 414.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+  end
+end

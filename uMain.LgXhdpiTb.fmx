@@ -1,0 +1,29 @@
+inherited main_LgXhdpiTb: Tmain_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited ButtonAdd: TButton
+      Position.X = 432.000000000000000000
+    end
+    inherited Label1: TLabel
+      Size.Width = 432.000000000000000000
+    end
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 480.000000000000000000
+    Size.Height = 781.000000000000000000
+    Viewport.Width = 480.000000000000000000
+    Viewport.Height = 733.000000000000000000
+    inherited ListBoxItem1: TListBoxItem
+      Size.Width = 480.000000000000000000
+    end
+    inherited ListBoxItem2: TListBoxItem
+      Size.Width = 480.000000000000000000
+    end
+    inherited SearchBox1: TSearchBox
+      Size.Width = 480.000000000000000000
+    end
+  end
+end

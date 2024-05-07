@@ -1,0 +1,137 @@
+object note: Tnote
+  Left = 0
+  Top = 0
+  Caption = #1050#1091#1088#1089#1086#1074#1072#1103' '#1041#1077#1083#1103#1077#1074' 428'
+  ClientHeight = 613
+  ClientWidth = 349
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMasterStyle = 3
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    StyledSettings = [Family, Size, Style]
+    TextSettings.WordWrap = True
+    Align = Client
+    Size.Width = 349.000000000000000000
+    Size.Height = 484.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 341.000000000000000000
+    Viewport.Height = 476.000000000000000000
+  end
+  object Memo2: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    StyledSettings = [Family, Size, Style]
+    TextSettings.WordWrap = True
+    Align = Top
+    Position.Y = 48.000000000000000000
+    Size.Width = 349.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Visible = False
+    Viewport.Width = 341.000000000000000000
+    Viewport.Height = 32.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 349.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    TintColor = claBlanchedalmond
+    object Edit: TButton
+      Align = Right
+      Position.X = 301.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'composetoolbutton'
+      TabOrder = 0
+      Text = 'Edit'
+      OnClick = EditClick
+    end
+    object Save: TButton
+      Align = Right
+      Position.X = 189.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Save'
+      Visible = False
+      OnClick = SaveClick
+    end
+    object GoBack: TButton
+      Align = Left
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowlefttoolbutton'
+      TabOrder = 2
+      Text = 'GoBack'
+      OnClick = GoBackClick
+    end
+    object Delete: TButton
+      Align = Right
+      Margins.Right = 5.000000000000000000
+      Position.X = 248.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'trashtoolbutton'
+      TabOrder = 3
+      Text = 'Delete'
+      OnClick = DeleteClick
+    end
+  end
+  object Line1: TLine
+    Align = Top
+    LineType = Bottom
+    Position.Y = 80.000000000000000000
+    Size.Width = 349.000000000000000000
+    Size.Height = 1.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ToolBar2: TToolBar
+    Align = Bottom
+    Position.Y = 565.000000000000000000
+    Size.Width = 349.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    TintColor = claBlanchedalmond
+    object Label2: TLabel
+      Align = Client
+      Size.Width = 349.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = #1044#1072#1090#1072' '#1080#1079#1084#1077#1085#1077#1085#1080#1103': '
+      TabOrder = 3
+    end
+  end
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = claWhite
+    Position.Y = 48.000000000000000000
+    Size.Width = 349.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Size.Width = 349.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      ParentShowHint = False
+      ShowHint = False
+    end
+  end
+end
